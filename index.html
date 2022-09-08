@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Validation</title>
+</head>
+<body>
+    <form onsubmit="fun" action="action_page">
+        <div class="container">
+          <h1>Register</h1>
+
+          <hr>
+          <label for="name"><b>Ad: </b></label>
+          <input type="text" placeholder="Adınızı daxil edin: " name="name" id="name" required>
+
+          <label for="sname"><b>Soy ad: </b></label>
+          <input type="text" placeholder="Soy adınızı daxil edin: " name="sname" id="sname" required>
+
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Emailinizi daxil edin:" name="email" id="email" required>
+      
+          <label for="psw"><b>Parol</b></label>
+          <input type="password" placeholder="Parolunuzu daxil edin" name="psw" id="psw" required>
+      
+          <label for="psw-repeat"><b>Təkrar Parol</b></label>
+          <input type="password" placeholder="Parolunuzu yenidən daxil edin" name="psw-repeat" id="psw-repeat" required>
+          <hr>
+      
+          
+          <button type="button" id="registerbtn">Register</button>
+          
+        </div>
+        <table id="validation-table" style="width:45% ;border: 1px solid;">
+          <thead>
+
+            <tr>
+             <th>Ad:</th>
+             <th>Soy ad:</th>
+             <th>Email</th>
+            
+            </tr>
+          </thead>
+          <tbody>
+            
+          </tbody>
+    
+        </table>
+      </form>
+      <script src="./script.js"></script>
+      
+</body>
+</html>
